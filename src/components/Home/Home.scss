@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Aidan;
+    src: url('../../../public/fonts/Aidan.otf');
+}
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+body{
+    height: 100%;
+    position: relative;
+   .body{
+    position: absolute;
+    top: 0;
+      height: 100vh;
+      width: 100vw;
+        overflow: hidden;
+    .background{
+        background-image: url('../assets/bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 100vh;
+      
+     
+
+       .info{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            z-index: 5;
+            height: 70vh;
+            cursor: default;
+
+            
+            .name{
+                font-size: 16vh;
+                font-family: Aidan;
+                font-weight: 500;
+                opacity: 0;
+                :hover{
+                    cursor: default;
+                }
+                &:nth-child(1){
+                    animation: 1.5s showleft 1s  ease-in-out forwards ;
+                }
+                &:nth-child(3){
+                    animation: 1.5s showright 1s  ease-in-out forwards ;
+                }
+            }
+            .and{
+                font-size: 10vh;
+                font-weight: 600;
+                opacity: 0;
+                animation: 1.5s show 1.5s  ease-in-out forwards ;
+            }
+            .inv{
+                font-weight: 600;
+                font-size: 3vh;
+                opacity: 0;
+                width: 100vw;
+                height: 3.5vh;
+                overflow: hidden;
+                &:nth-child(4){
+                    animation: 2s showleft 2.5s  ease-in-out forwards ;
+                }
+                &:nth-child(5){
+                    animation: 2s showleft 3s  ease-out forwards ;
+                }
+                &:nth-child(6){
+                    animation: 2s showleft 3.5s  ease-in-out forwards ;
+                }
+            }
+            
+        }
+        .leaf{
+            position: absolute;
+            background-image: url('../assets/leaf.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width:  30vh;
+            height: 20vh;
+            z-index: 1;
+        }
+        .gold{
+            background-image: url('../assets/gold.png');
+            height: 100vh;
+            width: 100vh;
+            background-size: 100vh auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            animation: 1.5s gold 0s  ease-in-out forwards;
+
+            
+        }
+        .leaf:nth-child(1){
+            aspect-ratio: 1 / 1;
+            top: 0;
+            left: 0;
+            animation: 1.5s leaf1 0s  ease-in-out forwards;
+            transform: rotate(180deg);
+
+        }
+        .leaf:nth-child(2){
+            aspect-ratio: 1 / 1;
+            bottom: 0;
+            right: 0;
+            animation: 1.5s leaf2 0s  ease-in-out forwards;
+        }
+    }
+   }
+}
+
+
+
+@keyframes show{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+@keyframes showright{
+    0%{
+        opacity: 0;
+        transform: translateX(-15%);
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+@keyframes showleft{
+    0%{
+        opacity: 0;
+        transform: translateX(15%);
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+
+@keyframes leaf2{
+    0%{
+        opacity: 0;
+        transform: translateX(25%);
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+@keyframes leaf1{
+    0%{
+        opacity: 0;
+        transform: translateX(-25%) rotate(180deg);
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+
+@keyframes gold{
+    0%{
+        opacity: 0;
+        transform:translate(-50%,-50%)  rotate(50deg) ;
+    }
+    100%{
+        opacity: 1;
+
+
+    }
+}
