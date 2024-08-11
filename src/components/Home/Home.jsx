@@ -21,11 +21,9 @@ function Home() {
   }, 5000);
 
   const lbtn = ()=>{
-    console.log('l clickled')
     playBg()
   }
   const rbtn = ()=>{
-    console.log('r clickled')
     playBg()
   }
 
@@ -39,8 +37,8 @@ function Home() {
           <div className="rBtn btn" onClick={rbtn}>Click here to continue</div>
         </div>
          }
-        {/* <Lock/> */}
-        <Front/>
+        <Lock/>
+        {/* <Front/> */}
 
         
       </div> 
