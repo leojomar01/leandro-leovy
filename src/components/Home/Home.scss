@@ -30,7 +30,8 @@ body{
       
      
 
-       .info{
+       .front{
+        .info{
             position: absolute;
             transform: translate(-50%, -50%);
             top: 50%;
@@ -118,6 +119,7 @@ body{
             right: 0;
             animation: 1.5s leaf2 0s  ease-in-out forwards;
         }
+       }
     }
    }
 }
@@ -186,4 +188,44 @@ body{
 
 
     }
+}
+
+
+.btns{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    
+    .btn{
+        width: 50%;
+        position: absolute;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        animation: btnani 1.5s ease-in-out  infinite;
+        text-shadow: 2px 2px black;
+        cursor: pointer;
+    }
+    .lBtn{
+        
+    }
+    .rBtn{
+        left: 50%;
+    }
+}
+
+@keyframes btnani {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
 }

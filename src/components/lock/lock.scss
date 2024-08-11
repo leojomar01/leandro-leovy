@@ -1,0 +1,295 @@
+// @font-face {
+//     font-family: Aidan;
+//     src: url('../../../public/fonts/Aidan.otf');
+// }
+
+.lock{
+    .roses{
+        height: 100vh;
+        position: relative;
+        .rose{
+            position: absolute;
+            aspect-ratio: 1/1;
+            height: calc(25vh + 10vw);
+            background-size: calc(25vh + 10vw);
+            background-repeat: no-repeat;
+            animation: roseShow 1.5s ease-in-out forwards;
+            transform: translate(-50%,-50%);
+            opacity: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rose:nth-child(1){
+            background-image: url('../assets/rose3.png');
+            top: calc(20% + 5vw);
+            left: 30%;
+            
+            animation-delay: random(9) * 100ms;
+        }
+        .rose:nth-child(2){
+            background-image: url('../assets/rose3.png');
+            top: calc(40% + 5vw);
+            left: 80%;
+            animation-delay: random(9) * 100ms;
+        }
+        .rose:nth-child(3){
+            background-image: url('../assets/rose2.png');
+            top: calc(85% + 5vw);
+            left: 50%;
+            animation-delay: random(9) * 100ms;
+        }
+        .rose:nth-child(4){
+            background-image: url('../assets/rose4.png');
+            top: calc(70% + 5vw);
+            left: 25%;
+            animation-delay: random(9) * 100ms;
+        }
+        .rose:nth-child(5){
+            background-image: url('../assets/rose4.png');
+            top: calc(10% + 5vw);
+            left: 50%;
+            
+            animation-delay: random(9) * 100ms;
+        }
+        .rose:nth-child(6){
+            background-image: url('../assets/rose2.png');
+            animation-delay: random(9) * 100ms;
+            top: calc(15% + 5vw);
+            left: 75%;
+            z-index: 6;
+        }
+        .rose:nth-child(7){
+            background-image: url('../assets/rose4.png');
+            animation-delay: random(9) * 100ms;
+            top: calc(65% + 5vw);
+            left: 70%;
+           
+
+        }
+    
+        .rose:nth-child(8){
+            background-image: url('../assets/rose2.png');
+            animation-delay: random(9) * 100ms;
+            top: 95%;
+           
+            left: 60%;
+            
+        }
+        .rose:nth-child(9){
+            background-image: url('../assets/rose4.png');
+            animation-delay: random(9) * 100ms;
+            top: calc(25% + 5vw);
+            left: 25%;
+            
+
+        }
+    
+        .rose:nth-child(10){
+            background-image: url('../assets/rose2.png');
+            animation-delay: random(9) * 100ms;
+            top: 50%;
+            left: 20%;
+        }
+
+
+        .rose:nth-child(11){
+            background-image: url('../assets/rose3.png');
+            top: calc(60% + 5vw);
+            left: 13%;
+            animation-delay: random(9) * 100ms;
+        }
+        .rose:nth-child(12){
+            background-image: url('../assets/rose3.png');
+            top: calc(50% + 5vw);
+            left: 110%;
+            animation-delay: random(9) * 100ms;
+            z-index: 6;
+        }
+        .rose:nth-child(13){
+            background-image: url('../assets/rose3.png');
+            top: calc(85% + 5vw);
+            left: 50%;
+            animation-delay: random(9) * 100ms;
+        }
+        .rose:nth-child(14){
+            background-image: url('../assets/rose4.png');
+            top: calc(90% + 5vw);
+            left: 10%;
+            
+            animation-delay: random(9) * 100ms;
+        }
+        .rose:nth-child(15){
+            background-image: url('../assets/rose4.png');
+            top: calc(60% + 5vw);
+            left: 0%;
+            animation-delay: random(9) * 100ms;
+            z-index: 6;
+
+        }
+        .rose:nth-child(16){
+            background-image: url('../assets/rose3.png');
+            animation-delay: random(9) * 100ms;
+            top: calc(15% + 5vw);
+            left: 95%;
+        }
+        .rose:nth-child(17){
+            background-image: url('../assets/rose2.png');
+            animation-delay: random(9) * 100ms;
+            top: calc(85% + 5vw);
+            left: 90%;
+            z-index: 6;
+        }
+    
+        .rose:nth-child(18){
+            background-image: url('../assets/rose4.png');
+            animation-delay: random(9) * 100ms;
+            top: 25%;
+            left: 90%;
+        }
+        .rose:nth-child(19){
+            background-image: url('../assets/rose2.png');
+            animation-delay: random(9) * 100ms;
+            top: calc(15% + 5vw);
+            left: 5%;
+            z-index: 6;
+
+        }
+        .rose:nth-child(20){
+            background-image: url('../assets/rose2.png');
+            animation-delay: random(9) * 100ms;
+            top: calc(85% + 5vw);
+            left: 5%;
+            z-index: 6;
+        }
+        .gold{
+            background-image: url('../assets/gold1.png');
+            height: 80vh;
+            width: 80vh;
+            background-size: 80vh auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 5;
+            animation: bgShow 1.5s ease-in-out forwards;
+
+        }
+    }
+    .wed1{
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: calc(45vh + 15vw);
+        aspect-ratio: 1/1;
+        z-index: 98;
+        .model{
+            transform: translate(-50%,-50%);
+            position: absolute;
+            top: 70%;
+            left: 5%;
+            background-image: url('../assets/wedvector.png');
+            height: 60%;
+            aspect-ratio: 1/1;
+            background-size: 60% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: fontShow 2.5s 1s forwards ease-in;
+            opacity: 0;
+
+        }
+
+        .ring{
+            transform: translate(-50%,-50%);
+            position: absolute;
+            top: 90%;
+            left: 85%;
+            background-image: url('../assets/ring.png');
+            height: 50%;
+            aspect-ratio: 1/1;
+            background-size: 50% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: fontShow 2.5s 1s forwards ease-in;
+            opacity: 0;
+
+
+        }
+    }
+    .names{
+        z-index: 99;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        .name{
+            font-size: 16vh;
+            font-family: Aidan;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+            opacity: 0;
+            &:nth-child(1){
+                animation: fontShow 2.5s  forwards ease-in;
+            }
+            &:nth-child(3){
+                animation: fontShow 2.5s .5s forwards ease-in;
+            }
+        }
+        
+        .and{
+            opacity: 0;
+            font-size: 10vh;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+            animation: fontShow 2.5s .2s forwards ease-in;
+        }
+        .date{
+            opacity: 0;
+            font-weight: 600;
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+            animation: fontShow 2.5s 2s forwards ease-in;
+
+        }
+    }
+}
+
+
+@keyframes fontShow {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes roseShow {
+
+    0%{
+        opacity: 0;
+        transform:translate(-50%,-50%) scale(.1) rotate(80deg) ;
+    }
+    100%{
+        opacity: 1;
+        transform:translate(-50%,-50%) scale(1);
+    }
+}
+
+@keyframes bgShow {
+
+    0%{
+        opacity: 0;
+        transform:translate(-50%,-50%) rotate(10deg)  ;
+    }
+    100%{
+        opacity: 1;
+        transform:translate(-50%,-50%);
+    }
+}
