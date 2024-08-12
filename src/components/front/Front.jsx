@@ -18,8 +18,9 @@ function Front() {
             <div className="date">Saturday, August 24, 2024</div>
             <div className="time">9:30 in the morning</div>
 
-            <div className="loc">at HOLY FAMILY PARISH CHURCH
-            QUEZON, NUEVA ECIJA</div>
+            <div className="loc">at HOLY FAMILY PARISH CHURCH 
+            </div>
+            <div className="loc">QUEZON, NUEVA ECIJA</div>
         </div>
     </div>
   )

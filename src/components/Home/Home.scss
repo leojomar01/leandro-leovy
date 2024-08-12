@@ -79,10 +79,9 @@ body{
                 text-align: end;
                 padding-right: 12vw;
                 font-weight: 600;
-                font-size: 1.1em;
+                font-size: .8em;
                 opacity: 0;
                 width: 100vw;
-                height: 3.5vh;
                 overflow: hidden;
                 &:nth-child(4){
                     animation: 2s showleft 2.5s  ease-in-out forwards ;
@@ -102,6 +101,9 @@ body{
                 }
                 &:nth-child(9){
                     animation: 2s showleft 4.7s  ease-in-out forwards ;
+                }
+                &:nth-child(10){
+                    animation: 2s showleft 4.9s  ease-in-out forwards ;
                 }
             }
             
