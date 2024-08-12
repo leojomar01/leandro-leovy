@@ -1,0 +1,107 @@
+.lastpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .lpbg{
+        background-image: url('../assets/bg2.png');
+        background-size: auto 90vh ;
+        background-position: center;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        border: 8px solid #0c2d1c;
+        padding: .5em;
+        margin: .5em;
+
+        // *{opacity: 0;}
+        .details{
+            opacity: 0;
+            font-family: gelato;
+            font-size: 4em;
+            animation: 1s showleft ease-in-out forwards ;
+
+        }
+        .tag{
+            opacity: 0;
+            font-weight: 600;
+            animation: 1s showleft 2.7s ease-in-out forwards ;
+
+        }
+        .snap{
+            opacity: 0;
+            font-weight: 800;
+            font-size: 1.2em;
+            animation: 1s showleft 2.5s ease-in-out forwards ;
+
+        }
+        .hash{
+            font-weight: 800;
+            opacity: 0;
+            animation: 1s showleft 3s ease-in-out forwards ;
+        }
+        .loc{
+            // font-size: 1.2em;
+            font-weight: 800;
+            opacity: 0;
+            animation: 1s showleft 1.5s ease-in-out forwards ;
+            
+        }
+        a{
+            font-weight: 600;
+            color: black;
+            font-size: 1em;
+            margin-bottom: 1em;
+            opacity: 0;
+            animation: 1s showleft 2s ease-in-out forwards ;
+        }
+        .dc{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            .img{
+                grid-row: span 3;
+                background-image: url('../assets/dc.png');
+                height: 150PX;
+                background-size:auto 150PX ;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 0;
+            animation: 1s showleft .5s ease-in-out forwards ;
+
+            }
+            .title{
+                font-weight: 800;
+                font-size: 1.6em;
+                opacity: 0;
+            animation: 1s showleft .7s ease-in-out forwards ;
+
+            }
+            .color{
+                font-weight: 600;
+            font-size: 1.6em;
+            opacity: 0;
+            animation: 1s showleft 1s ease-in-out forwards ;
+
+            }
+            .circles{
+                display: flex;
+                gap: 1em;
+                opacity: 0;
+                animation: 1s showleft 1.2s ease-in-out forwards ;
+                justify-content: center;
+                .circle{
+                    border: 1px solid #0c2d1c;
+                    aspect-ratio: 1/1;
+                    height: 35px;
+                    border-radius: 50%;
+                    &:nth-child(2){
+                        background-color: white;
+                    }
+                    &:nth-child(1){
+                        background-color: #0c2d1c;
+                    }
+                }
+            }
+        }
+    }
+}

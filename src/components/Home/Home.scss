@@ -28,22 +28,34 @@ body{
         background-size: 100%;
         height: 100vh;
         z-index: -999;
-      
-     
 
        .front{
+
+        .wed{
+            background-image: url('../assets/wed.png');
+            height: 300px;
+            aspect-ratio: 1/1;
+            background-size: auto 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            bottom: 0%;
+            left: -15%;
+            opacity: 0;
+            animation: 2.5s showright 1s  ease-in-out forwards ;
+        }
         .info{
             position: absolute;
             transform: translate(-50%, -50%);
             top: 50%;
-            left: 50%;
+            left: 60%;
             z-index: 5;
             height: 70vh;
             cursor: default;
 
             
             .name{
-                font-size: 16vh;
+                font-size: 15vh;
                 font-family: Aidan;
                 font-weight: 500;
                 opacity: 0;
@@ -58,14 +70,16 @@ body{
                 }
             }
             .and{
-                font-size: 10vh;
+                font-size: 8vh;
                 font-weight: 600;
                 opacity: 0;
                 animation: 1.5s show 1.5s  ease-in-out forwards ;
             }
-            .inv{
+            .inv,.date,.time,.loc{
+                text-align: end;
+                padding-right: 12vw;
                 font-weight: 600;
-                font-size: 3vh;
+                font-size: 1.1em;
                 opacity: 0;
                 width: 100vw;
                 height: 3.5vh;
@@ -78,6 +92,16 @@ body{
                 }
                 &:nth-child(6){
                     animation: 2s showleft 3.5s  ease-in-out forwards ;
+                }
+                &:nth-child(7){
+                    margin-top: 1em;
+                    animation: 2s showleft 4s  ease-out forwards ;
+                }
+                &:nth-child(8){
+                    animation: 2s showleft 4.5s  ease-in-out forwards ;
+                }
+                &:nth-child(9){
+                    animation: 2s showleft 4.7s  ease-in-out forwards ;
                 }
             }
             
@@ -123,6 +147,30 @@ body{
        }
     }
    }
+}
+@media screen and (min-width:600px) {
+    body{
+       .body{
+            .background{ 
+                .front{
+                    background-color: red;
+                    .wed{
+                        height: 450px;
+                        background-size: auto 450px;
+                        left: 15%;
+                    }
+                    .info{
+                        left: 50%;
+                        .inv,.date,.time,.loc{
+                            padding-right: 25vw;
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+            }
+       }
+    }
+
 }
 
 
@@ -199,7 +247,7 @@ body{
     z-index: 999;
     
     .btn{
-        width: 50%;
+        width: 100%;
         position: absolute;
         height: 100%;
         display: flex;
@@ -210,11 +258,10 @@ body{
         text-shadow: 2px 2px black;
         cursor: pointer;
     }
-    .lBtn{
-        
-    }
+    
     .rBtn{
-        left: 50%;
+        font-size: 2em;
+        padding-top: 90vh;
     }
 }
 

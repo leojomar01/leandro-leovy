@@ -1,4 +1,9 @@
-.page1{
+@font-face {
+    font-family: gelato;
+    src: url('../../../public/fonts/Gelato.otf');
+}
+
+.page2{
     padding-top: calc(2.5vw + 1.5vh);
     height: 100vh;
     width: 100vw;
@@ -17,56 +22,41 @@
         align-items: center;
     }
     .rose:nth-child(1){
-        background-image: url('../assets/rose2.png');
-        top: 15%;
-        left: 10%;
+        background-image: url('../assets/rose3.png');
+        top: 5%;
+        left: 8%;
         animation-delay: random(9) * 100ms;
     }
     .rose:nth-child(2){
-        background-image: url('../assets/rose3.png');
-        top: 18%;
+        background-image: url('../assets/rose4.png');
+        top: 4%;
         left: 90%;
         animation-delay: random(9) * 100ms;
     }
     .rose:nth-child(3){
-        background-image: url('../assets/rose4.png');
+        background-image: url('../assets/rose2.png');
         top: 100%;
         left: 90%;
         animation-delay: random(9) * 100ms;
     }
     .rose:nth-child(4){
-        background-image: url('../assets/rose4.png');
+        background-image: url('../assets/rose2.png');
         top: 90%;
         left: -5%;
         animation-delay: random(9) * 100ms;
     }
     .rose:nth-child(5){
-        background-image: url('../assets/rose3.png');
+        background-image: url('../assets/rose2.png');
         top: calc(75% + 5vw);
-        left: 100%;
+        left: 105%;
         animation-delay: random(9) * 100ms;
     }
 
     
-    .lastnames{
-        font-family: aidan;
-        font-size: 2.5em;
-        opacity: 0;
-        font-weight: 600z;
-        animation: 1s showleft  ease-in-out forwards ;
-
-    }
-    .nuptial{
-        opacity: 0;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.5em;
-        animation: 1s showleft .5s ease-in-out forwards ;
-
-    }
     .title{
         opacity: 0;
-        font-size: 1.5em;
-        font-weight: 600;
+        font-family: Gelato;
+        font-size: 2.5em;
         animation: 1s showleft 1s ease-in-out forwards ;
 
     }
@@ -83,13 +73,35 @@
         font-weight: 700;
         justify-content: center;
         grid-template-columns: 1fr 1fr;
-        text-align: start;
-        gap: 5vw;
+        text-align: center;
+        gap: 1em;
         padding: .5em;
         font-size: 80%;
         border: 5px #0c2d1c solid;
 
-        .ninang{
+
+        .candle,.veil,.cord{
+            text-align: center;
+            display: grid;
+            .title{
+                font-size: 1.5em;
+                font-family: Gelato;
+                opacity: 0;
+            }
+            .names{
+                display: grid;
+                opacity: 0;
+                grid-template-columns: 1fr 1fr;
+                animation: 1s showleft 1.5s ease-in-out forwards ;
+            }
+        }
+        .cord{
+            justify-self: center;
+            width: 50%;
+            grid-column: span 2;
+        }
+
+        .groomsman{
             opacity: 0;
             animation: 1s showleft  ease-in-out forwards ;
             @for $i from 1 through 30 {
@@ -99,8 +111,39 @@
               }
         }
 
+        .bearer{
+            text-align: center;
+            display: grid;
+            grid-column:  span 2;
+            grid-template-columns: 1fr 1fr 1fr;
+            .title{
+                font-size: 1.5em;
+            }
+            .name{
+                animation: 1s showleft 1.5s ease-in-out forwards ;
+                opacity: 0;
+            }
+        }
+
+        .folwergirls{
+            grid-column: span 2;
+            text-align: center;
+            .title{
+                font-size: 1.5em;
+                opacity: 0;
+                animation: 1s showleft 1.5s ease-in-out forwards ;
+
+            }
+            .names{
+                display: grid;
+                opacity: 0;
+                grid-template-columns: repeat(2,1fr);
+                animation: 1s showleft 2s ease-in-out forwards ;
+            }
+        }
+
         
-        .ninong{
+        .bridesmaid{
             opacity: 0;
             animation: 1s showright  ease-in-out forwards ;
             @for $i from 1 through 30 {
@@ -110,19 +153,7 @@
               }
         }
 
-        .bestman,.maidofhonor{
-            display: grid;
-            text-align: center;
-            justify-content: center;
-
-            .title{
-                font-size: 1em;
-            }
-            .name{
-                font-family: aidan;
-                font-size: 1.2em;
-            }
-        }
+        
         .bestman{
             .title{
                 opacity: 0;
@@ -149,7 +180,7 @@
 }
 
 @media screen and (min-width:600px) {
-    .page1{
+    .page2{
 
         .rose{
             height: 200px;
