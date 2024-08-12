@@ -16,7 +16,7 @@ function LastPage() {
             </div>
 
             <div className="loc">RECEPTION WILL FOLLOW AT </div>
-            <a href="https://maps.app.goo.gl/HtYHF3PwyzLWAZJE6">DSR CATERING SERVICES FARMVILLEBRGY, DULONG BAYAN,
+            <a href="https://maps.app.goo.gl/HtYHF3PwyzLWAZJE6">DSR CATERING SERVICES FARMVILLE  BRGY, DULONG BAYAN,
             QUEZON, NUEVA ECIJA </a>
 
             <div className="snap">Snap and Share</div>
