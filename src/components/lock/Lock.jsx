@@ -4,6 +4,8 @@ import './lock.scss'
 function Lock() {
   return (
     <div className='lock'>
+       
+
         <div className="roses">
             <div className="rose">1</div>
             <div className="rose">2</div>

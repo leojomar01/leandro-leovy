@@ -1,0 +1,150 @@
+.page1{
+    padding-top: calc(2.5vw + 1.5vh);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    .rose{
+        position: absolute;
+        aspect-ratio: 1/1;
+        height: 90px;
+        background-size: 90px;
+        background-repeat: no-repeat;
+        animation: roseShow 1.5s ease-in-out forwards;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rose:nth-child(1){
+        background-image: url('../assets/rose2.png');
+        top: 15%;
+        left: 10%;
+        animation-delay: random(9) * 100ms;
+    }
+    .rose:nth-child(2){
+        background-image: url('../assets/rose3.png');
+        top: 18%;
+        left: 90%;
+        animation-delay: random(9) * 100ms;
+    }
+    .rose:nth-child(3){
+        background-image: url('../assets/rose4.png');
+        top: calc(85% + 5vw);
+        left: 90%;
+        animation-delay: random(9) * 100ms;
+    }
+    .rose:nth-child(4){
+        background-image: url('../assets/rose4.png');
+        top: calc(70% + 5vw);
+        left: -5%;
+        animation-delay: random(9) * 100ms;
+    }
+    .rose:nth-child(5){
+        background-image: url('../assets/rose3.png');
+        top: calc(75% + 5vw);
+        left: 100%;
+        animation-delay: random(9) * 100ms;
+    }
+
+    
+    .lastnames{
+        font-family: aidan;
+        font-size: 2.5em;
+        font-weight: 600z;
+    }
+    .nuptial{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+    }
+    .title{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .sponsors{
+        margin-top: 1em;
+        background-image: url('../assets/bg2.png');
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        left:20%;
+        z-index: 2;
+        display:grid;
+        font-weight: 700;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        text-align: start;
+        gap: 5vw;
+        padding: .5em;
+        font-size: 80%;
+        border: 5px #0c2d1c solid;
+
+        .bestman,.maidofhonor{
+            display: grid;
+            text-align: center;
+            justify-content: center;
+            .title{
+                font-size: 1em;
+            }
+            .name{
+                font-family: aidan;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width:600px) {
+    .page1{
+
+        .rose{
+            height: 200px;
+            background-size: 200px;
+        }
+
+        .rose:nth-child(1){
+            top: 10%;
+            left: 30%;
+        }
+        .rose:nth-child(2){
+            top: 18%;
+            left: 75%;
+        }
+        .rose:nth-child(3){
+            top: calc(85% + 5vw);
+            left: 80%;
+        }
+        .rose:nth-child(4){
+            top: calc(70% + 5vw);
+            left: 25%;
+        }
+        .rose:nth-child(5){
+            top: calc(75% + 5vw);
+            left: 90%;
+        }
+        .lastnames{
+            font-size: 3rem;
+        }
+        .sponsors{
+            width: 65vw;
+            transform: translate(-50%,0);
+            left: 50%;
+            position: absolute;
+            font-size: .9em;
+
+            .ninongs,.ninangs{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .bestman,.maidofhonor{
+              
+                .name{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}

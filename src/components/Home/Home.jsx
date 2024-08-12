@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Home.scss';
 import Front from '../front/Front';
 import Lock from '../lock/Lock';
+import Page1 from '../page1/Page1';
 
 function Home() {
   const [audioPlayed, setAudioPlayed] = useState(false);
@@ -37,8 +38,9 @@ function Home() {
           <div className="rBtn btn" onClick={rbtn}>Click here to continue</div>
         </div>
          }
-        <Lock/>
+        {/* <Lock/> */}
         {/* <Front/> */}
+        <Page1/>
 
         
       </div> 
