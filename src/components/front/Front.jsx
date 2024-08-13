@@ -16,11 +16,11 @@ function Front() {
             <div className="inv">WE UNITE IN MARRIAGE</div>
 
             <div className="date">Saturday, August 24, 2024</div>
-            <div className="time">9:30 in the morning</div>
+            <div className="time">9:00 in the morning</div>
 
-            <div className="loc">at HOLY FAMILY PARISH CHURCH 
+            <div className="loc">at ST. DOMINIC PARISH CHURCH 
             </div>
-            <div className="loc">QUEZON, NUEVA ECIJA</div>
+            <div className="loc">STO. DOMINGO, NUEVA ECIJA</div>
         </div>
     </div>
   )
