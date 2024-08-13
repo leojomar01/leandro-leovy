@@ -45,7 +45,7 @@ function Home() {
 
   return (
     <div className='body'>
-      <audio id="backgroundAudio" loop src="./bg.mp3" />
+      <audio id="backgroundAudio" loop src="./bg2.mp3" />
      
       <div className="background">
         {btnShow && (
